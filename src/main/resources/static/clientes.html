@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Esto es un comentario... -->
+<html lang="es">
+    <head>
+        <title>Agencia Mercedes</title>
+        <meta charset="UTF-8"/>     
+        <meta name="description" content="Mercedes Benz Tarea Semana 4"/>
+        <meta name="keywords" content="Taller, Autobahn, Carros Europeos, Mercedes Benz"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a class="logo nav-link" href="inicio.html">Mercedes</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="vehiculos.html">Vehiculos</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="vestimenta.html">Vestimenta</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="formula1.html">Formula1</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="repuestos.html">Repuestos</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="entretenimiento.html">Entretenimiento</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="clientes.html">Clientes</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="encuentranos.html">Encuentranos</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <section class="contenido">
+            <h2 class="petronas">Nuestros Clientes</h2>
+            <article> 
+                <h3 class="bold text">Listado de Clientes Ingresados</h3>
+                <table border="0">
+                    <thead>
+                        <tr>
+                            <th class="textoCentrado">ID</th>
+                            <th class="textoCentrado">Nombre</th>
+                            <th class="textoCentrado">Edad</th>
+                            <th class="textoCentrado">Saldo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="textoCentrado">1</td>
+                            <td>David McDonald</td>
+                            <td class="textoCentrado">35</td>
+                            <td class="textoDerecha">$1.770.000</td>
+                        </tr>
+                        <tr>
+                            <td class="textoCentrado">2</td>
+                            <td>Juanki Loco Again</td>
+                            <td class="textoCentrado">39</td>
+                            <td class="textoDerecha">$1.120.000</td>
+                        </tr>
+                        <tr>
+                            <td class="textoCentrado">3</td>
+                            <td>JH de la Cruz</td>
+                            <td class="textoCentrado">77</td>
+                            <td class="textoDerecha">$777.777</td>
+                        </tr>
+                        <tr>
+                            <td class="textoCentrado">4</td>
+                            <td>Haha Quiros</td>
+                            <td class="textoCentrado">5</td>
+                            <td class="textoDerecha">$1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            
+            <hr/>
+            <article>
+                <h3 class="bold text">Registro de Nuevos Clientes</h3>
+                
+                
+                <form action="/cliente/insertar" method="post">
+                    <input type="hidden" name="id" value="5" />
+                    <fieldset>
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" value="" size="40" />
+                    </fieldset>
+                    <fieldset>
+                        <label>Clave</label>
+                        <input type="password" name="clave" value="" size="10" />
+                    </fieldset>
+                    <fieldset>
+                        <label>Edad</label>
+                        <input type="number" 
+                               name="edad" 
+                               min="18"
+                               value="" />
+                    </fieldset>
+                      <fieldset>
+                        <label>Saldo</label>
+                        <input type="number" 
+                               name="salario" 
+                               min="500000"
+                               value="" />
+                    </fieldset>
+                    <input type="submit" value="Enviar" />
+                </form>
+                
+            </article> 
+            
+        </section>
+        
+        <footer class="footer">
+            Desarrollos Tecnologicos SCAMA 2023 &COPY;
+        </footer>
+    </body>
+</html>
